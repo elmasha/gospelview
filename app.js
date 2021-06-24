@@ -9,8 +9,7 @@ const _urlencoded = express.urlencoded({ extended: false })
 app.use(cors())
 app.use(express.json())
 app.use(express.static('public'));
-////---------Allow Access origin -----///
-
+////---------Allow Access origin -----///----- https://gospelview1.herokuapp.com/
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "----REPLACE WITH HEROKU LINK----");
     res.header("Access-Control-Allow-Headers",
@@ -85,7 +84,7 @@ app.get('/stk', access, _urlencoded,function(req,res){
                     "PartyA": "254746291229",
                     "PartyB": "174379", //PayBill  No.
                     "PhoneNumber": "254746291229",
-                    "CallBackURL": "http://0c46cd5c20a7.ngrok.io/stk_callback",//----replace with heroku link
+                    "CallBackURL": "https://.herokuapp.com/stk_callback",//----- https://gospelview1.herokuapp.com/
                     "AccountReference": "GospelView",
                     "TransactionDesc": "lipa na mpesa"
 
