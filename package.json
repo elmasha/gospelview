@@ -1,0 +1,14 @@
+{
+  "name": "gospelviewmpes",
+  "version": "1.0.0",
+  "description": "GospelView",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MIT"
+  ],
+  "author": "elmasha Omondi",
+  "license": "ISC"
+}
